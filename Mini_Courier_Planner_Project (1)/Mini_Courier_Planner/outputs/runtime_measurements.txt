@@ -1,0 +1,6 @@
+Measured runtime (milliseconds) on this execution environment
+Input size,Merge Sort,Knapsack DP (20 kg),Dijkstra (one source)
+10,0.019109,0.533060,0.016334
+30,0.038156,0.998578,0.022433
+60,0.082562,1.426913,0.037476
+100,0.149151,2.295639,0.062032

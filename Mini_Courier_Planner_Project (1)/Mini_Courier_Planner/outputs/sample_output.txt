@@ -1,0 +1,42 @@
+==================================================================
+                 MINI-COURIER PLANNER
+==================================================================
+Warehouse: Warehouse | Box capacity: 10.0 kg
+Total parcels received: 7
+
+1) PRIORITIZED PARCELS (Merge Sort)
+ID  | Destination | Weight | Priority | Deadline         | Value
+----+-------------+--------+----------+------------------+------
+P03 | C           | 1.5    | High     | 2026-11-13 21:00 | 100  
+P06 | C           | 1.0    | High     | 2026-11-14 08:00 | 100  
+P01 | A           | 2.0    | High     | 2026-11-14 10:00 | 100  
+P02 | B           | 3.0    | Medium   | 2026-11-14 12:00 | 60   
+P05 | E           | 2.5    | Medium   | 2026-11-14 15:00 | 60   
+P04 | D           | 4.0    | Low      | 2026-11-15 09:00 | 30   
+P07 | B           | 2.0    | Low      | 2026-11-15 12:00 | 30   
+
+2) SELECTED PARCELS (0/1 Knapsack DP)
+ID  | Destination | Weight | Priority | Value
+----+-------------+--------+----------+------
+P03 | C           | 1.5    | High     | 100  
+P06 | C           | 1.0    | High     | 100  
+P01 | A           | 2.0    | High     | 100  
+P02 | B           | 3.0    | Medium   | 60   
+P05 | E           | 2.5    | Medium   | 60   
+Selected value: 420 | Used capacity: 10.0/10.0 kg
+
+3) SHORTEST PATHS (Dijkstra)
+Warehouse -> C: Warehouse -> C | 8.0 km
+Warehouse -> A: Warehouse -> A | 4.0 km
+Warehouse -> B: Warehouse -> B | 6.0 km
+Warehouse -> E: Warehouse -> E | 7.0 km
+
+4) APPROXIMATE DELIVERY TOUR (Nearest Neighbor)
+Warehouse -> A -> B -> C -> E -> Warehouse
+Total route length (including return to warehouse): 20.0 km
+
+SUMMARY
+Parcels selected: 5 of 7
+Packing utilization: 100.0%
+Total priority value: 420
+Approximate tour distance: 20.0 km

@@ -1,0 +1,13 @@
+from,to,distance
+Warehouse,A,4
+Warehouse,B,6
+Warehouse,C,8
+Warehouse,D,10
+Warehouse,E,7
+A,B,3
+A,C,5
+B,C,2
+B,D,4
+C,D,3
+C,E,4
+D,E,2
